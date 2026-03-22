@@ -2,14 +2,12 @@
   ArrowRight,
   BriefcaseBusiness,
   Download,
-  GraduationCap,
   Mail,
   MapPin,
   Phone,
   ShieldCheck,
   Star
 } from "lucide-react";
-import { ContactForm } from "@/components/contact-form";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { SectionHeading } from "@/components/section-heading";
@@ -370,9 +368,9 @@ export default function Home() {
             <SectionHeading
               eyebrow="Contact"
               title="Let's connect for quality, testing, and production opportunities"
-              description="Direct contact details are included below, along with a simple form that opens the user's email client."
+              description="Direct contact details are included below for recruiters and hiring teams to reach out quickly."
             />
-            <div className="mt-8 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
               <div className="space-y-4">
                 <a
                   href={`mailto:${profile.email}`}
@@ -406,28 +404,14 @@ export default function Home() {
                     </p>
                   </div>
                 </a>
-                <a
-                  href={profile.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center gap-4 rounded-3xl border border-border/70 bg-surface p-5 transition hover:border-accent/40"
-                >
-                  <div className="rounded-2xl bg-accent-soft p-3 text-accent">
-                    <GraduationCap size={20} />
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.22em] text-muted">
-                      LinkedIn
-                    </p>
-                    <p className="mt-1 text-sm font-medium text-text">
-                      linkedin.com/in/your-profile
-                    </p>
-                  </div>
-                </a>
-              </div>
-
-              <div className="rounded-3xl border border-border/70 bg-surface p-6">
-                <ContactForm />
+                <div className="rounded-3xl border border-border/70 bg-surface p-5">
+                  <p className="text-xs uppercase tracking-[0.22em] text-muted">
+                    Availability
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-muted">
+                    Open to quality control, testing, inspection, and production support opportunities. Email and phone are the primary contact channels for now.
+                  </p>
+                </div>
               </div>
             </div>
           </SectionReveal>

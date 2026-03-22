@@ -16,6 +16,8 @@ import { useEffect, useMemo, useState } from "react";
 import { navItems, profile } from "@/lib/data";
 import { ThemeToggle } from "./theme-toggle";
 
+type SectionId = (typeof navItems)[number];
+
 const iconMap = {
   about: Info,
   experience: BriefcaseBusiness,
@@ -27,7 +29,7 @@ const iconMap = {
 } as const;
 
 export function Navbar() {
-  const [active, setActive] = useState<string>("about");
+  const [active, setActive] = useState<SectionId>("about");
   const [open, setOpen] = useState(false);
 
   const sections = useMemo(() => [...navItems], []);
@@ -50,7 +52,12 @@ export function Navbar() {
             bottom: element.offsetTop + element.offsetHeight
           };
         })
-        .filter((section): section is { id: string; top: number; bottom: number } => Boolean(section));
+        .filter(
+          (
+            section
+          ): section is { id: SectionId; top: number; bottom: number } =>
+            Boolean(section)
+        );
 
       const currentSection = positions.find((section, index) => {
         const nextTop = positions[index + 1]?.top ?? Number.POSITIVE_INFINITY;
