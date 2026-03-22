@@ -1,4 +1,4 @@
-export const profile = {
+﻿export const profile = {
   name: "Peddagolla Akhila",
   role: "Electronics & Quality Control Professional",
   location: "India",
@@ -8,7 +8,7 @@ export const profile = {
   summary:
     "Detail-oriented Electronics and Communication Engineering graduate with hands-on experience in quality inspection, production testing, industrial manufacturing, and defence sector apprenticeship environments.",
   objective:
-    "Find a responsible job opportunity where I can put my learning and skills to good use while contributing to the company’s success."
+    "Find a responsible job opportunity where I can put my learning and skills to good use while contributing to the company's success."
 };
 
 export const navItems = [
@@ -30,6 +30,18 @@ export const aboutPoints = [
 ];
 
 export const experiences = [
+  {
+    role: "Project Engineer - QC & QA",
+    company: "Bharat Dynamics Limited",
+    duration: "2024 - Present",
+    location: "India",
+    achievements: [
+      "Support quality control and quality assurance activities for engineering and manufacturing workflows in a defence-sector environment.",
+      "Coordinate inspections, quality records, and process documentation to help ensure components and assemblies meet required specifications.",
+      "Work closely with production, stores, and engineering teams to identify deviations, monitor compliance, and support corrective actions.",
+      "Contribute to stage-wise verification, material or component checks, and final quality reporting aligned with project and organizational requirements."
+    ]
+  },
   {
     role: "Quality Control Inspector",
     company: "Sushanth Engineers",
@@ -105,7 +117,7 @@ export const projects = [
     title: "Solar Tracking System",
     duration: "Jul 2018 - Jun 2019",
     description:
-      "Academic project focused on tracking the sun’s movement to improve solar panel alignment and energy capture efficiency.",
+      "Academic project focused on tracking the sun's movement to improve solar panel alignment and energy capture efficiency.",
     technologies: ["Embedded Electronics", "Tracking Logic", "Renewable Energy"],
     impact:
       "Showcased practical design thinking for efficiency improvement through responsive electromechanical control."

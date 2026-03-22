@@ -10,6 +10,7 @@
   Star
 } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { SectionHeading } from "@/components/section-heading";
 import { SectionReveal } from "@/components/section-reveal";
@@ -432,6 +433,7 @@ export default function Home() {
           </SectionReveal>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

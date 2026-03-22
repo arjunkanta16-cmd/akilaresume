@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
@@ -17,7 +17,7 @@ export function SectionReveal({ children, className, id }: SectionRevealProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
-      className={className}
+      className={`scroll-mt-28 ${className ?? ""}`}
     >
       {children}
     </motion.section>
